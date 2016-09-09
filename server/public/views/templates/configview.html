@@ -1,0 +1,16 @@
+<div class="row">
+  <h1>Settings</h1>
+
+  <div id="enterColor" ng-controller="SettingsController">
+    <h4>Add a Color!</h4>
+    <select ng-model="selectedColor">
+      <option value="{{colors}}" ng-repeat="colors in addColors">
+        {{colors}}
+      </option>
+
+
+    </select>
+
+          <button ng-click="addColor(selectedColor)" type="submit">ADD</button>
+  </div>
+</div>
